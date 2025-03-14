@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF文件处理系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF文件处理系统</h1>
+        
+        <div class="upload-section">
+            <form id="uploadForm">
+                <div class="file-input-container">
+                    <input type="file" id="pdfFile" accept=".pdf" required>
+                    <label for="pdfFile" class="file-label">选择PDF文件</label>
+                </div>
+                <button type="submit" id="calculateBtn">立即计算</button>
+            </form>
+        </div>
+
+        <div class="status" id="status"></div>
+        
+        <div class="result-section">
+            <h2>处理结果</h2>
+            <div id="result" class="result-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
